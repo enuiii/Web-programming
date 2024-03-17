@@ -285,3 +285,11 @@ $arr = [5, 8, 10];
 if (count($arr) == 3) {
 	echo 'Сумма элементов массива: ' . array_sum($arr);
 }
+
+echo ("Task 19\n");
+for ($i = 0; $i <= 20; $i++) {
+	for ($j = $i; $j > 0; $j--) {
+		echo "x";
+	}
+	echo "\n";
+}
