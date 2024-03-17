@@ -133,3 +133,12 @@ foreach ($array as $element) {
 }
 
 echo "Количество элементов для суммы больше 10: $count\n";
+
+echo ("Task 15\n");
+function printStringReturnNumber($string) {
+	echo $string . "\n";
+	return 123;
+}
+
+$my_num = printStringReturnNumber("Hello World");
+echo $my_num . "\n";
