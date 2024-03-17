@@ -238,3 +238,50 @@ echo end($arr)."\n";;
 
 $lastIndex = count($arr) - 2;
 echo $arr[$lastIndex]."\n";
+
+echo ("Task 18\n");
+function isSumGreaterThanTen($num1, $num2) {
+	if ($num1 + $num2 > 10) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+$a = 5;
+$b = 10;
+
+echo "Number $b greater than $a is: " . (isSumGreaterThanTen($b, $a) ? "true" : "false") . "\n";
+
+function areNumbersEqual($num1, $num2) {
+	if ($num1 == $num2) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+$a = 5;
+$b = 10;
+
+echo "Are numbers $a and $b equal? " . (areNumbersEqual($a, $b) ? "Yes" : "No") . "\n";
+
+$test = 0;
+if ($test == 0) echo 'верно'."\n";;
+
+$age = 45;
+if ($age < 10 || $age > 99) {
+	echo 'Число меньше 10 или больше 99'."\n";;
+} else {
+	$sum = array_sum(str_split($age));
+	if ($sum <= 9) {
+		echo 'Сумма цифр однозначна'."\n";;
+	} else {
+		echo 'Сумма цифр двузначна'."\n";
+	}
+}
+
+$arr = [5, 8, 10];
+if (count($arr) == 3) {
+	echo 'Сумма элементов массива: ' . array_sum($arr);
+}
