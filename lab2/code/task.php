@@ -293,3 +293,24 @@ for ($i = 0; $i <= 20; $i++) {
 	}
 	echo "\n";
 }
+
+echo ("Task 20\n");
+$array = [5, 10, 15, 20];
+$average = array_sum($array) / count($array);
+echo "Среднее арифметическое: " . $average . "\n";
+
+$sum = array_sum(range(1, 100));
+echo "Сумма чисел от 1 до 100: " . $sum . "\n";
+
+$array2 = [4, 9, 16, 25];
+$sqrt_array = array_map('sqrt', $array2);
+print_r($sqrt_array);
+
+$alphabet = range('a', 'z');
+$numbers = range(1, 26);
+$assoc_array = array_combine($alphabet, $numbers);
+print_r($assoc_array);
+
+$string = '1234567890';
+$sum_pairs = array_sum(str_split($string, 2));
+echo "Сумма пар чисел: " . $sum_pairs . "\n";
