@@ -30,3 +30,6 @@ $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_languages;
 echo "Среднее количество дней, затраченное на изучение каждого языка программирования: " . $days_per_language . "\n";
+
+echo ("Task 12\n");
+echo 8 ** 2 . "\n";
