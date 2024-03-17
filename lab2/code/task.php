@@ -142,3 +142,46 @@ function printStringReturnNumber($string) {
 
 $my_num = printStringReturnNumber("Hello World");
 echo $my_num . "\n";
+
+echo ("Task 16\n");
+function increaseEnthusiasm($str) {
+	return $str . "!";
+}
+
+function repeatThreeTimes($str) {
+	return $str . $str . $str;
+}
+
+echo increaseEnthusiasm(repeatThreeTimes("World"));
+
+function cut($str, $num = 10) {
+	return substr($str, 0, $num);
+}
+
+echo cut("This is a long string", 5) . "\n";
+echo cut("Another long string");
+
+function printArray($arr, $i = 0) {
+	if($i < count($arr)) {
+		echo $arr[$i] . "\n";
+		printArray($arr, $i + 1);
+	}
+}
+
+$array = [1, 2, 3, 4, 5];
+printArray($array);
+
+function sumDigits($num) {
+	$sum = 0;
+	while($num > 0) {
+		$sum += $num % 10;
+		$num = (int)($num / 10);
+	}
+	if($sum > 9) {
+		return sumDigits($sum);
+	} else {
+		return $sum;
+	}
+}
+
+echo sumDigits(12345) . "\n";
